@@ -50,13 +50,12 @@ function checkAnswer(i) {
     modal.showModal();
   }
 
-  // Переход к следующему вопросу
   current = (current + 1) % quizData.length;
 }
 
 closeModal.addEventListener("click", () => {
   modal.close();
-  loadQuestion(); // ← загружаем следующий вопрос
+  loadQuestion(); 
 });
 
 function changeTheme() {
